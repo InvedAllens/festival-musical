@@ -1,0 +1,44 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.video{
+    position: relative;
+    max-height:70rem;
+    min-height:50rem;
+    overflow: hidden;
+    
+    video{
+        width: auto;
+        display: block;
+        @include m.desktop{
+            width:100%;
+        }
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(205,33,163);
+        background: linear-gradient(270deg, rgba(205,33,163,0.4430147058823529) 0%, rgba(241,109,120,0.4458158263305322) 50%, rgba(194,170,213,0.9332107843137255) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.contenido-video{
+    z-index: 1;
+    h2{
+        color: v.$blanco;
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    p{
+        background-color: v.$rosa;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: v.$blanco;
+        font-weight: 700;
+    }
+
+}

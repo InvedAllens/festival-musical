@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>septiembre 26, Mexico city, Mexico </p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg"
+                    alt="imagen vocalista festival">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">septiembre 2023,Mexico city</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique vitae nisi, molestias fugiat rerum nulla vel,
+                voluptate sunt iste tenetur odit hic doloribus placeat delectus
+                harum officia praesentium inventore quidem.</p>
+        </div>
+
+    </section>
+    <section class="lineup" id="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 26</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Dua Lipa</span></li>
+                    <li>22:00 | <span>Coldplay</span></li>
+                    <li>20:00 | <span>The Weeknd</span></li>
+                    <li>19:00 | <span>Arctic Monkeys</span></li>
+                    <li>18:00 | <span>Metalica</span></li>
+
+                </ul>
+            </div>
+            <!--escenario-->
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Deadmau5</span></li>
+                    <li>22:00 | <span>Tiesto</span></li>
+                    <li>20:00 | <span>Hardwell</span></li>
+                    <li>19:00 | <span>Dash Berlin</span></li>
+                    <li>18:00 | <span>Audien</span></li>
+                </ul>
+            </div>
+            <!--escenario-->
+        </div>
+        <!--escenarios-contenedor-->
+        <p class="dia">Sabado 27</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metalica</span></li>
+                    <li>22:00 | <span>Metalica</span></li>
+                    <li>20:00 | <span>Metalica</span></li>
+                    <li>19:00 | <span>Metalica</span></li>
+                    <li>18:00 | <span>Metalica</span></li>
+                </ul>
+            </div>
+            <!--escenario-->
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metalica</span></li>
+                    <li>22:00 | <span>Metalica</span></li>
+                    <li>20:00 | <span>Metalica</span></li>
+                    <li>19:00 | <span>Metalica</span></li>
+                    <li>18:00 | <span>Metalica</span></li>
+                </ul>
+            </div>
+            <!--escenario-->
+        </div>
+        <!--escenarios-contenedor-->
+
+    </section>
+    <!--lineup-->
+
+    <section  id="galeria" class="galeria contenedor">
+        <!--galeria-->
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+    <!--galeria-->
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <!--pase basico-->
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camisa del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+            <!--pase premium-->
+        </div>
+        <!--contenedor de pases-->
+    </section>
+    <!--section boletos-->
+    <footer class="footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados</p>
+
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
