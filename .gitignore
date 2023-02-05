@@ -1,8 +1,8 @@
+#archivos a omitir
 node_modules
+src
 ._.DS_Store
 ._img
 ._video
 package-lock.json
 .DS_Store
-src
-node_modules
